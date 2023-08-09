@@ -1,0 +1,809 @@
+[
+  {
+    "name": "pow",
+    "parameters": [
+      "a",
+      "b"
+    ],
+    "body": {
+      "statements": [
+        {
+          "identifier": "c",
+          "value": {
+            "value": 1.0
+          },
+          "position": {
+            "line": 5,
+            "column": 14
+          }
+        },
+        {
+          "initializer": {
+            "identifier": "i",
+            "value": {
+              "value": 0.0
+            },
+            "position": {
+              "line": 6,
+              "column": 18
+            }
+          },
+          "condition": {
+            "left": {
+              "name": "i",
+              "position": {
+                "line": 6,
+                "column": 20
+              }
+            },
+            "operator": {
+              "type": "LESS",
+              "position": {
+                "line": 6,
+                "column": 22
+              }
+            },
+            "right": {
+              "name": "b",
+              "position": {
+                "line": 6,
+                "column": 24
+              }
+            }
+          },
+          "increment": {
+            "identifier": "i",
+            "value": {
+              "left": {
+                "name": "i",
+                "position": {
+                  "line": 6,
+                  "column": 31
+                }
+              },
+              "operator": {
+                "type": "PLUS",
+                "position": {
+                  "line": 6,
+                  "column": 33
+                }
+              },
+              "right": {
+                "value": 1.0
+              }
+            },
+            "position": {
+              "line": 6,
+              "column": 36
+            }
+          },
+          "body": {
+            "statements": [
+              {
+                "identifier": "c",
+                "value": {
+                  "left": {
+                    "name": "c",
+                    "position": {
+                      "line": 7,
+                      "column": 13
+                    }
+                  },
+                  "operator": {
+                    "type": "MULTIPLY",
+                    "position": {
+                      "line": 7,
+                      "column": 15
+                    }
+                  },
+                  "right": {
+                    "name": "a",
+                    "position": {
+                      "line": 7,
+                      "column": 17
+                    }
+                  }
+                },
+                "position": {
+                  "line": 7,
+                  "column": 18
+                }
+              }
+            ]
+          }
+        },
+        {
+          "value": {
+            "name": "c",
+            "position": {
+              "line": 9,
+              "column": 12
+            }
+          },
+          "position": {
+            "line": 9,
+            "column": 13
+          }
+        }
+      ]
+    },
+    "position": {
+      "line": 10,
+      "column": 1
+    }
+  },
+  {
+    "condition": {
+      "value": true
+    },
+    "body": {
+      "statements": [
+        {
+          "identifier": "operator",
+          "value": {
+            "function": {
+              "name": "input",
+              "position": {
+                "line": 13,
+                "column": 20
+              }
+            },
+            "arguments": [],
+            "position": {
+              "line": 13,
+              "column": 25
+            }
+          },
+          "position": {
+            "line": 13,
+            "column": 27
+          }
+        },
+        {
+          "condition": {
+            "left": {
+              "name": "operator",
+              "position": {
+                "line": 14,
+                "column": 8
+              }
+            },
+            "operator": {
+              "type": "EQUAL_EQUAL",
+              "position": {
+                "line": 14,
+                "column": 17
+              }
+            },
+            "right": {
+              "value": "+"
+            }
+          },
+          "ifBody": {
+            "statements": [
+              {
+                "value": {
+                  "function": {
+                    "name": "print",
+                    "position": {
+                      "line": 15,
+                      "column": 9
+                    }
+                  },
+                  "arguments": [
+                    {
+                      "left": {
+                        "left": {
+                          "function": {
+                            "name": "parse",
+                            "position": {
+                              "line": 15,
+                              "column": 15
+                            }
+                          },
+                          "arguments": [
+                            {
+                              "function": {
+                                "name": "input",
+                                "position": {
+                                  "line": 15,
+                                  "column": 21
+                                }
+                              },
+                              "arguments": [],
+                              "position": {
+                                "line": 15,
+                                "column": 26
+                              }
+                            }
+                          ],
+                          "position": {
+                            "line": 15,
+                            "column": 20
+                          }
+                        },
+                        "operator": {
+                          "type": "PLUS",
+                          "position": {
+                            "line": 15,
+                            "column": 30
+                          }
+                        },
+                        "right": {
+                          "function": {
+                            "name": "parse",
+                            "position": {
+                              "line": 15,
+                              "column": 32
+                            }
+                          },
+                          "arguments": [
+                            {
+                              "function": {
+                                "name": "input",
+                                "position": {
+                                  "line": 15,
+                                  "column": 38
+                                }
+                              },
+                              "arguments": [],
+                              "position": {
+                                "line": 15,
+                                "column": 43
+                              }
+                            }
+                          ],
+                          "position": {
+                            "line": 15,
+                            "column": 37
+                          }
+                        }
+                      },
+                      "operator": {
+                        "type": "PLUS",
+                        "position": {
+                          "line": 15,
+                          "column": 47
+                        }
+                      },
+                      "right": {
+                        "operand": {
+                          "value": "\\n"
+                        },
+                        "operator": {
+                          "type": "BANG",
+                          "position": {
+                            "line": 15,
+                            "column": 49
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "position": {
+                    "line": 15,
+                    "column": 14
+                  }
+                }
+              }
+            ]
+          },
+          "elseBody": {
+            "condition": {
+              "left": {
+                "name": "operator",
+                "position": {
+                  "line": 16,
+                  "column": 15
+                }
+              },
+              "operator": {
+                "type": "EQUAL_EQUAL",
+                "position": {
+                  "line": 16,
+                  "column": 24
+                }
+              },
+              "right": {
+                "value": "-"
+              }
+            },
+            "ifBody": {
+              "statements": [
+                {
+                  "value": {
+                    "function": {
+                      "name": "print",
+                      "position": {
+                        "line": 17,
+                        "column": 9
+                      }
+                    },
+                    "arguments": [
+                      {
+                        "left": {
+                          "left": {
+                            "function": {
+                              "name": "parse",
+                              "position": {
+                                "line": 17,
+                                "column": 15
+                              }
+                            },
+                            "arguments": [
+                              {
+                                "function": {
+                                  "name": "input",
+                                  "position": {
+                                    "line": 17,
+                                    "column": 21
+                                  }
+                                },
+                                "arguments": [],
+                                "position": {
+                                  "line": 17,
+                                  "column": 26
+                                }
+                              }
+                            ],
+                            "position": {
+                              "line": 17,
+                              "column": 20
+                            }
+                          },
+                          "operator": {
+                            "type": "MINUS",
+                            "position": {
+                              "line": 17,
+                              "column": 30
+                            }
+                          },
+                          "right": {
+                            "function": {
+                              "name": "parse",
+                              "position": {
+                                "line": 17,
+                                "column": 32
+                              }
+                            },
+                            "arguments": [
+                              {
+                                "function": {
+                                  "name": "input",
+                                  "position": {
+                                    "line": 17,
+                                    "column": 38
+                                  }
+                                },
+                                "arguments": [],
+                                "position": {
+                                  "line": 17,
+                                  "column": 43
+                                }
+                              }
+                            ],
+                            "position": {
+                              "line": 17,
+                              "column": 37
+                            }
+                          }
+                        },
+                        "operator": {
+                          "type": "PLUS",
+                          "position": {
+                            "line": 17,
+                            "column": 47
+                          }
+                        },
+                        "right": {
+                          "value": "\\n"
+                        }
+                      }
+                    ],
+                    "position": {
+                      "line": 17,
+                      "column": 14
+                    }
+                  }
+                }
+              ]
+            },
+            "elseBody": {
+              "condition": {
+                "left": {
+                  "name": "operator",
+                  "position": {
+                    "line": 18,
+                    "column": 15
+                  }
+                },
+                "operator": {
+                  "type": "EQUAL_EQUAL",
+                  "position": {
+                    "line": 18,
+                    "column": 24
+                  }
+                },
+                "right": {
+                  "value": "*"
+                }
+              },
+              "ifBody": {
+                "statements": [
+                  {
+                    "value": {
+                      "function": {
+                        "name": "print",
+                        "position": {
+                          "line": 19,
+                          "column": 9
+                        }
+                      },
+                      "arguments": [
+                        {
+                          "left": {
+                            "left": {
+                              "function": {
+                                "name": "parse",
+                                "position": {
+                                  "line": 19,
+                                  "column": 15
+                                }
+                              },
+                              "arguments": [
+                                {
+                                  "function": {
+                                    "name": "input",
+                                    "position": {
+                                      "line": 19,
+                                      "column": 21
+                                    }
+                                  },
+                                  "arguments": [],
+                                  "position": {
+                                    "line": 19,
+                                    "column": 26
+                                  }
+                                }
+                              ],
+                              "position": {
+                                "line": 19,
+                                "column": 20
+                              }
+                            },
+                            "operator": {
+                              "type": "MULTIPLY",
+                              "position": {
+                                "line": 19,
+                                "column": 30
+                              }
+                            },
+                            "right": {
+                              "function": {
+                                "name": "parse",
+                                "position": {
+                                  "line": 19,
+                                  "column": 32
+                                }
+                              },
+                              "arguments": [
+                                {
+                                  "function": {
+                                    "name": "input",
+                                    "position": {
+                                      "line": 19,
+                                      "column": 38
+                                    }
+                                  },
+                                  "arguments": [],
+                                  "position": {
+                                    "line": 19,
+                                    "column": 43
+                                  }
+                                }
+                              ],
+                              "position": {
+                                "line": 19,
+                                "column": 37
+                              }
+                            }
+                          },
+                          "operator": {
+                            "type": "PLUS",
+                            "position": {
+                              "line": 19,
+                              "column": 47
+                            }
+                          },
+                          "right": {
+                            "value": "\\n"
+                          }
+                        }
+                      ],
+                      "position": {
+                        "line": 19,
+                        "column": 14
+                      }
+                    }
+                  }
+                ]
+              },
+              "elseBody": {
+                "condition": {
+                  "left": {
+                    "name": "operator",
+                    "position": {
+                      "line": 20,
+                      "column": 15
+                    }
+                  },
+                  "operator": {
+                    "type": "EQUAL_EQUAL",
+                    "position": {
+                      "line": 20,
+                      "column": 24
+                    }
+                  },
+                  "right": {
+                    "value": "/"
+                  }
+                },
+                "ifBody": {
+                  "statements": [
+                    {
+                      "value": {
+                        "function": {
+                          "name": "print",
+                          "position": {
+                            "line": 21,
+                            "column": 9
+                          }
+                        },
+                        "arguments": [
+                          {
+                            "left": {
+                              "left": {
+                                "function": {
+                                  "name": "parse",
+                                  "position": {
+                                    "line": 21,
+                                    "column": 15
+                                  }
+                                },
+                                "arguments": [
+                                  {
+                                    "function": {
+                                      "name": "input",
+                                      "position": {
+                                        "line": 21,
+                                        "column": 21
+                                      }
+                                    },
+                                    "arguments": [],
+                                    "position": {
+                                      "line": 21,
+                                      "column": 26
+                                    }
+                                  }
+                                ],
+                                "position": {
+                                  "line": 21,
+                                  "column": 20
+                                }
+                              },
+                              "operator": {
+                                "type": "DIVIDE",
+                                "position": {
+                                  "line": 21,
+                                  "column": 30
+                                }
+                              },
+                              "right": {
+                                "function": {
+                                  "name": "parse",
+                                  "position": {
+                                    "line": 21,
+                                    "column": 32
+                                  }
+                                },
+                                "arguments": [
+                                  {
+                                    "function": {
+                                      "name": "input",
+                                      "position": {
+                                        "line": 21,
+                                        "column": 38
+                                      }
+                                    },
+                                    "arguments": [],
+                                    "position": {
+                                      "line": 21,
+                                      "column": 43
+                                    }
+                                  }
+                                ],
+                                "position": {
+                                  "line": 21,
+                                  "column": 37
+                                }
+                              }
+                            },
+                            "operator": {
+                              "type": "PLUS",
+                              "position": {
+                                "line": 21,
+                                "column": 47
+                              }
+                            },
+                            "right": {
+                              "value": "\\n"
+                            }
+                          }
+                        ],
+                        "position": {
+                          "line": 21,
+                          "column": 14
+                        }
+                      }
+                    }
+                  ]
+                },
+                "elseBody": {
+                  "condition": {
+                    "left": {
+                      "name": "operator",
+                      "position": {
+                        "line": 22,
+                        "column": 15
+                      }
+                    },
+                    "operator": {
+                      "type": "EQUAL_EQUAL",
+                      "position": {
+                        "line": 22,
+                        "column": 24
+                      }
+                    },
+                    "right": {
+                      "value": "^"
+                    }
+                  },
+                  "ifBody": {
+                    "statements": [
+                      {
+                        "value": {
+                          "function": {
+                            "name": "print",
+                            "position": {
+                              "line": 23,
+                              "column": 9
+                            }
+                          },
+                          "arguments": [
+                            {
+                              "left": {
+                                "function": {
+                                  "name": "pow",
+                                  "position": {
+                                    "line": 23,
+                                    "column": 15
+                                  }
+                                },
+                                "arguments": [
+                                  {
+                                    "function": {
+                                      "name": "parse",
+                                      "position": {
+                                        "line": 23,
+                                        "column": 19
+                                      }
+                                    },
+                                    "arguments": [
+                                      {
+                                        "function": {
+                                          "name": "input",
+                                          "position": {
+                                            "line": 23,
+                                            "column": 25
+                                          }
+                                        },
+                                        "arguments": [],
+                                        "position": {
+                                          "line": 23,
+                                          "column": 30
+                                        }
+                                      }
+                                    ],
+                                    "position": {
+                                      "line": 23,
+                                      "column": 24
+                                    }
+                                  },
+                                  {
+                                    "function": {
+                                      "name": "parse",
+                                      "position": {
+                                        "line": 23,
+                                        "column": 35
+                                      }
+                                    },
+                                    "arguments": [
+                                      {
+                                        "function": {
+                                          "name": "input",
+                                          "position": {
+                                            "line": 23,
+                                            "column": 41
+                                          }
+                                        },
+                                        "arguments": [],
+                                        "position": {
+                                          "line": 23,
+                                          "column": 46
+                                        }
+                                      }
+                                    ],
+                                    "position": {
+                                      "line": 23,
+                                      "column": 40
+                                    }
+                                  }
+                                ],
+                                "position": {
+                                  "line": 23,
+                                  "column": 18
+                                }
+                              },
+                              "operator": {
+                                "type": "PLUS",
+                                "position": {
+                                  "line": 23,
+                                  "column": 51
+                                }
+                              },
+                              "right": {
+                                "value": "\\n"
+                              }
+                            }
+                          ],
+                          "position": {
+                            "line": 23,
+                            "column": 14
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "elseBody": {
+                    "statements": [
+                      {
+                        "value": {
+                          "function": {
+                            "name": "print",
+                            "position": {
+                              "line": 25,
+                              "column": 9
+                            }
+                          },
+                          "arguments": [
+                            {
+                              "value": "Invalid operator provided!\\n"
+                            }
+                          ],
+                          "position": {
+                            "line": 25,
+                            "column": 14
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+]

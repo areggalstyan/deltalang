@@ -1,0 +1,27 @@
+// Input: a binary operator (+, -, *, /, ^), two numbers
+// Output: the result of applying the operator to those numbers
+
+def pow(a, b) {
+    var c = 1;
+    for var i = 0; i < b; i = i + 1; {
+        c = c * a;
+    }
+    return c;
+}
+
+while true; {
+    var operator = input();
+    if operator == "+"; {
+        print(parse(input()) + parse(input()) + !"\n");
+    } else if operator == "-"; {
+        print(parse(input()) - parse(input()) + "\n");
+    } else if operator == "*"; {
+        print(parse(input()) * parse(input()) + "\n");
+    } else if operator == "/"; {
+        print(parse(input()) / parse(input()) + "\n");
+    } else if operator == "^"; {
+        print(pow(parse(input()), parse(input())) + "\n");
+    } else {
+        print("Invalid operator provided!\n");
+    }
+}
