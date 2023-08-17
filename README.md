@@ -67,6 +67,14 @@ if <condition>; {
 } else {
     <body>
 }
+
+for <init>; <condition>; <increment>; {
+    <body>
+}
+
+while <condition>; {
+    <body>
+}
 ```
 
 ## Functions

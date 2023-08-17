@@ -12,7 +12,7 @@ def pow(a, b) {
 while true; {
     var operator = input();
     if operator == "+"; {
-        print(parse(input()) + parse(input()) + !"\n");
+        print(parse(input()) + parse(input()) + "\n");
     } else if operator == "-"; {
         print(parse(input()) - parse(input()) + "\n");
     } else if operator == "*"; {

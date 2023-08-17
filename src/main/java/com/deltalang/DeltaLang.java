@@ -20,15 +20,17 @@ public class DeltaLang {
 
     @SneakyThrows
     public static void main(String[] args) {
-        if (args.length != 2) return;
+        if (args.length != 1 && args.length != 2) return;
 
         var characters = Sequence.of(Path.of(args[0]));
         var tokens = new Scanner(characters, handler).scan();
         var statements = new Parser(tokens, handler).parse();
 
-        @Cleanup
-        var writer = Files.newBufferedWriter(Path.of(args[1]));
-        gson.toJson(statements, writer);
+        if (args.length == 2) {
+            @Cleanup
+            var writer = Files.newBufferedWriter(Path.of(args[1]));
+            gson.toJson(statements, writer);
+        }
 
         new Executor(handler, output, input).execute(statements);
     }
